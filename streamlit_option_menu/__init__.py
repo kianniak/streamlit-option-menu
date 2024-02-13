@@ -77,7 +77,6 @@ def option_menu(menu_title, options, default_index=0, menu_icon=None, icons=None
 # and lose its current state. In this case, we want to vary the component's
 # "name" argument without having it get recreated.
 if __name__ == "__main__":
-    st.set_page_config(page_title="Option Menu", layout="wide")
     with st.sidebar:
         selected = option_menu("Main Menu", ["Home", "Upload","---", "Tasks", 'Settings'], 
         icons=['house', 'cloud-upload', None, "list-task", 'gear'], menu_icon="cast", default_index=1)
